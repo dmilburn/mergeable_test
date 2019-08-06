@@ -4,5 +4,5 @@ mergeable:
     validate:
       - do: description
         must_exclude:
-          regex: [ ]
+          regex: \[ ]
           message: All checkboxes must be checked
