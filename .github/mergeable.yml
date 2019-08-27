@@ -4,5 +4,9 @@ mergeable:
     validate:
       - do: description
         must_exclude:
-          regex: [ ]
+          regex: \[ ]
           message: All checkboxes must be checked
+      - do: description
+        must_exclude:
+          regex: 'Please include some details of the security impact'
+          message: You must fill out Security Impact
